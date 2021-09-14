@@ -1,0 +1,1 @@
+`requirement.txt` is not compatible with mask_detector_pc.py. 

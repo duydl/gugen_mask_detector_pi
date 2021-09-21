@@ -1,4 +1,4 @@
-import lite_runtime.interpreter as tflite
+import tflite_runtime.interpreter as tflite
 import numpy as np
 import argparse
 import time
@@ -112,7 +112,7 @@ maskNet.allocate_tensors()
 print("[INFO] starting video stream...")
 camera = PiCamera()
 camera.resolution = (400, 400)
-camera.framerate = 0.5
+camera.framerate = 5
 rawCapture = PiRGBArray(camera, size=(400, 400))
 # allow the camera to warmup
 time.sleep(0.5)
